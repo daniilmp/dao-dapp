@@ -1,0 +1,15 @@
+<h1>Voting</h1>
+<div *ngIf="isConnected">
+    <p>Question:</p>
+    <input [(ngModel)]="question" type="text" />
+    <button (click)="newVote()">New vote</button>
+    <div *ngFor="let vote of votes;">
+        <h3>#{{vote.id}}:{{vote.metadata}}</h3>
+        <p>Creator: {{vote.creator}}</p>
+        <p>Yes: {{vote.yea}}</p>
+        <p>No: {{vote.nay}}</p>
+        <p>Open: {{vote.open}}</p>
+        <button *ngIf="vote.open" (click)="voteYes(vote)">YES</button>
+        <button *ngIf="vote.open" (click)="voteNo(vote)">NO</button>
+    </div>
+</div>

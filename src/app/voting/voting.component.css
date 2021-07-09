@@ -1,0 +1,18 @@
+.connectButton{
+	border:none;
+	outline:none;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:16px 31px;
+	text-decoration:none;
+}
+.connectButtonActive {
+	background-color:#1771F1;
+
+}
+.connectButton:hover {
+    background-color:#5199FF;
+}

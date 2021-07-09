@@ -1,0 +1,14 @@
+<h1>Tokens</h1>
+<div *ngIf="isConnected">
+    <p>Recipient:</p>
+    <input [(ngModel)]="recepient" type="text" />
+    <p>Amount:</p>
+    <input [(ngModel)]="amount" type="number" />
+    <button (click)="addTokens()">Add tokens</button>
+    <h3>Balances:</h3>
+    <ol>
+        <li *ngFor="let holder of holders">Address: {{holder.address}}, Balance: {{holder.balance}}
+
+        </li>
+    </ol>
+</div>

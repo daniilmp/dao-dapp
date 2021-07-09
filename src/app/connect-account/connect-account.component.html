@@ -1,0 +1,2 @@
+<button (click)="connectToMetamask()" class="connectButton" >{{!isConnected ? "Connect account" : "Disconnect wallet"}}</button>
+<p *ngIf="isConnected"> Connected Account: {{connectedAccount}}</p>

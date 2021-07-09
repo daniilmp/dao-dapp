@@ -1,0 +1,99 @@
+[
+    {
+        "constant": false,
+        "inputs": [
+            {
+                "name": "_receiver",
+                "type": "address"
+            },
+            {
+                "name": "_amount",
+                "type": "uint256"
+            }
+        ],
+        "name": "mint",
+        "outputs": [],
+        "payable": false,
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "constant": true,
+        "inputs": [
+            {
+                "name": "",
+                "type": "address"
+            }
+        ],
+        "name": "vestingsLengths",
+        "outputs": [
+            {
+                "name": "",
+                "type": "uint256"
+            }
+        ],
+        "payable": false,
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "constant": false,
+        "inputs": [
+            {
+                "name": "_holder",
+                "type": "address"
+            },
+            {
+                "name": "_amount",
+                "type": "uint256"
+            }
+        ],
+        "name": "burn",
+        "outputs": [],
+        "payable": false,
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "constant": false,
+        "inputs": [
+            {
+                "name": "_evmScript",
+                "type": "bytes"
+            }
+        ],
+        "name": "forward",
+        "outputs": [],
+        "payable": false,
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "constant": true,
+        "inputs": [],
+        "name": "maxAccountTokens",
+        "outputs": [
+            {
+                "name": "",
+                "type": "uint256"
+            }
+        ],
+        "payable": false,
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "constant": true,
+        "inputs": [],
+        "name": "token",
+        "outputs": [
+            {
+                "name": "",
+                "type": "address"
+            }
+        ],
+        "payable": false,
+        "stateMutability": "view",
+        "type": "function"
+    }
+]
